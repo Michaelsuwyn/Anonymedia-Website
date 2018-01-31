@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+</div>
+
+  <div class="row" id="row2">
+
+    <div class="col-md-4" id="row2">
+
+
+      <h1 id="wordMove"><b>Friends</b></h1>
+
+
+  <!-- Table that lists friends and username -->
+    <table class="table table-striped" id="friendsTable">
+        <tr>
+          <th>UserName</th>
+        </tr>
+        <tr ng-repeat="f in vm.friendsList">
+          <td>{{f.username}}</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+  <br></br>
+  <h1 id="wordMove">Do You Know Any of These Users???</h1>
+
+  <!-- This table is a list of all people registered in the site-->
+  <table class="table table-striped" id="possibleFriends">
+    <tr class="danger">
+      <th>Name</th>
+      <th>Add Friend</th>
+    </tr>
+    <tr ng-repeat="u in vm.users" class="">
+    <td>{{u.username}} </td>
+    <!-- this button is not working -->
+    <td> <button type="button" ng-click="vm.createFriend(u.id)"  class="btn btn-warning">Add friend</button> </td>
+  </tr>
+  </table>
+</div>

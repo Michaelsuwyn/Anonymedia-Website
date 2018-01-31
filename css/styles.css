@@ -1,0 +1,110 @@
+#newPost{
+  padding-left: 50px;
+}
+
+#hide{
+  visibility: hidden;
+}
+
+#signRegMid{
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  background-image: url("http://wallpaper.pickywallpapers.com/2560x1440/blue-space-light.jpg");
+  height: 400px;
+  width: 300px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+#friendsTable{
+  background-color:  #EDDBCD;
+
+}
+
+#possibleFriends{
+  background-color:  #EDDBCD;
+
+}
+
+
+
+#link{
+  color: black;
+}
+
+
+ #postTable{
+  background-color: #EDDBCD;
+  color: black;
+  border: 3px solid black;
+  padding-top: 100px;
+  }
+
+#register{
+  color: black;
+  font-style: italic;
+}
+
+}
+#newsfeed{
+  background-color: red;
+  color: pink;
+}
+#homepage{
+  background-color: #99bbff;
+}
+#header{
+  background: #99bbff;
+ border: 2px solid #467813;
+ border-radius: 5px;
+ color: black;
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ padding: 15px 20px 15px 50px;
+ }
+
+ #logo{
+padding-top: 50px;
+   height: 400px;
+   width: 600px;
+   opacity: .5;
+
+ }
+
+
+#friendsList{
+padding-top: 100px;
+
+  background-color:  #EDDBCD;
+
+  border: 2px solid black;
+
+}
+
+.btn-warning{
+  background-color: black;
+}
+
+#spacer{
+  height: 50px;
+}
+
+
+
+
+.mainBorder{
+  border: double;
+  background-color: #EDDBCD;
+	border-top: 15px double #000;
+	border-bottom: 15px double #000;
+  border-left: 15px double #000;
+  border-right: 15px double #000;
+	box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0 #000, 0 1px 0 0 #000, 0 -1px 0 0 #000;
+	margin-bottom: 100px;
+
+}
+#row2{
+  padding-left: 50px;
+}

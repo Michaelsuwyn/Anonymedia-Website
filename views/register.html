@@ -1,0 +1,26 @@
+
+<style>
+
+    body{
+      background-color: #c06014;
+      background-image: url("http://www.coolwallpapers.me/download/2112/Abstract_Orange_Space_Clouds.jpg/");
+      opacity: .9;
+    }
+    </style>
+
+{{vm.registerConf}}
+
+
+<div id="signRegMid">
+
+
+    <h1 style="color: #c06014;">Register Here </h1>
+    <br></br>
+
+<input type="text" placeholder="Name..." ng-model="vm.username">
+<br></br>
+<input type="text" placeholder="Password..." ng-model="vm.password">
+<br></br>
+<button type="button" name="regBtn" ng-click="vm.register()"  class="btn btn-warning" id="butts">Register</button>
+
+</div>

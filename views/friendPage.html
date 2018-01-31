@@ -1,0 +1,19 @@
+
+
+
+<table class="table table-striped" id="postTable">
+  <th>User</th>
+  <th>Posts</th>
+
+    <tr ng-repeat="p in vm.Post" ng-if="p.userId == vm.$stateParams.id ">
+      <td>{{p.userId}}</td>
+      <td> {{p.content}} </td>
+
+      <!--The comment button does not work yet -->
+
+      <!-- the delete post button is now working -->
+
+  </tr>
+
+
+</table>

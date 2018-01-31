@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+
+<div class="row">
+<div class="col-sm-6">
+
+    <div id="newPost">
+        <h1> <b> Hello {{vm.UserService.user.username}} <b></h1>
+      <!-- this creates a new post sends it to the database -->
+    <textarea name="name" rows="4" cols="60" ng-model="vm.content" placeholder="What's on your mind???..."></textarea>
+      <!-- <input type="text" ng-model = "vm.timeCreated" placeholder="MM-DD-YYYY"> -->
+      <button type="button" ng-click="vm.create()" class="btn btn-warning"> Post</button>
+      </div>
+      </div>
+
+
+
+<div class="col-sm-6">
+    <img src="SuwynBook.PNG" id="logo">
+<br></br>
+<br>
+
+</div>
+</div>
+
+
+<div class="row" id="row2">
+
+<div class="col-md-6">
+
+
+
+    <table class="table table-striped" id="postTable" style="background-color: #66a3ff;">
+      <th>Time Posted</th>
+      <th>Posts</th>
+      <th>Delete</th>
+
+        <tr ng-repeat="p in vm.Post" ng-if="p.userId == vm.UserService.user.id">
+          <td>{{p.timeCreated | date: format: timezone}}</td>
+          <td> {{p.content}} </td>
+
+
+
+          <!-- the delete post button is now working -->
+          <td><button type="button" ng-click="vm.delete(p.id)"  class="btn btn-warning">Delete</button></td>
+          </tr>
+  </table>
+  </div>
+
+
+
+
+
+
+  <div class="col-sm-4">
+    <!-- Table that lists friends and username -->
+    <table class="table table-striped" id="friendsList">
+      <tr>
+        <th>Friend</th>
+        <th>Delete</th>
+        <th>View</th>
+      </tr>
+      <tr ng-repeat="f in vm.myFriends">
+        <td>{{f.username}}</td>
+        <td><button type="button" name="button" ng-click="vm.deleteFriend(f.id)"  class="btn btn-warning">Delete</button></td>
+        <td><button type="button" name="button" ng-click="vm.viewFriend(f.id)" class="btn btn-warning">View</button></td>
+      </tr>
+  </table>
+  </div>
+</div>
+
+
+
+</body>

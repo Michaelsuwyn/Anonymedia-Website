@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+  <body>
+
+    <div id="newsfeed">
+    <h1 id="row2"><b>News Feed</b></h1>
+  </div>
+
+
+  <div class="col-md-8" id="row2">
+  <!--this table shows all posts-->
+  <table class="table table-striped" id="postTable" style="background-color: #66a3ff;">
+    <th>Posts</th>
+    <th>Time Posted</th>
+      <tr ng-repeat="p in vm.Post">
+        <td> {{p.content}} </td>
+        <td>{{p.timeCreated | date: format: timezone}}</td>
+      </tr>
+
+  </table>
+  </div>
+
+
+  </body>
